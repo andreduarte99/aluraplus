@@ -4,6 +4,7 @@
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
     --fonte-principal: 'Inter', sans-serif;
+    --botao-azul-efeito: #3C92FA;
 }
 
 *{
@@ -94,3 +95,84 @@ body{
 .container__descricao{
     padding: 2em;
 }
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista__item{
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape__logo{
+    margin: 0em 0em 4em;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+}
+
+.lista__link{
+    list-style-type: none;
+    margin: 0em 1em 2em;
+}
+
+.lista__link a:hover{
+    color: var(--botao-azul);
+}
+.lista__link a:active{
+    color: purple;
+}
+
+.container__botao:hover{
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
+.botao_secundario:hover{
+    background-color: var(--cinza-secundario);
+    color: var(--cor-de-fundo);
+    border-color: var(--cor-de-fundo);
+}
+
+.lista__link__link{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    font-style: normal;
+    color: var(--branco-principal);
+}
+
+.rodape__texto{
+    color:var(--cinza-secundario);
+    margin: 1em 15em 2em 15em;
+}
+
+.rodape{
+    text-align: center;
+}
+
+/*
+Centralização da imagem da Logo;
+Transformar a lista em um flex-container para os links ficarem em linha;
+Colorir esses links e retirar a decoração;
+Centralização da lista;
+Colorir os textos;
+Centralizar os textos;
+Separar todos elementos através de margins.
+*/
